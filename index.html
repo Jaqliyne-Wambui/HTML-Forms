@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLICATION FOR QA/RPA TRAINING</title>
+</head>
+<body style="max-width: 600px; margin: 0 auto;">
+    <h2>
+        APPLICATION FORM
+    </h2>
+    <form action="/submit" method="post">
+        <!-- used maxlength and text input type -->
+        <label for="text_input"> Names:</label>  
+        <input type="text" id="text_input" name="text_input" placeholder="Enter name" maxlength="10" required>
+        <br>
+        <br>
+        <!-- used minlength and password input type -->
+        <label for="password_input"> Create Password:</label>
+        <input type="password" id="password_input" name="password_input" minlength="6" placeholder="Create password" required>
+        <br>
+        <br>
+        <!-- used number input type, used min and max age -->
+        <label for="number_input"> Age:</label>
+        <input type="number" id="number_input" name="number_input" min="18" max="35" required>
+        <br>
+        <br>
+        <!-- used Radio Buttons -->
+        <label>Gender:</label>
+        <label>
+            <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+        <br>
+        <br>
+        <!-- used pattern for phone number -->
+        <label for="phone_input">Phone Number:</label>
+        <input type="text" id="phone_input" name="phone_input" pattern="\d{3}-\d{3}-\d{3}-\d{3}" placeholder="ie 254 711 111 111" required>
+        <br>
+        <br>
+        <!-- used checkbox for subscribing to email notifications -->
+        <label>
+            <input type="checkbox" name="subscribe" value="yes"> Receive notications via email
+        </label>
+        <br>
+        <br>
+        <!-- used textarea for applicants to share a quick response  -->
+        <!-- used placeholder -->
+        <label for="textarea_input"></label>
+        <textarea id="textarea_input" name="textarea_input" rows="4" cols="50" placeholder="How did you know about us?"></textarea>
+        <br>
+        <br>
+        <!-- used select dropdown -->
+        <label for="select_input">What program do you wish to enroll for:</label>
+        <select id="select_input" name="select_input" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="option1">Civil Engineering</option>
+            <option value="option2">Mechanical Engineering</option>
+            
+        </select>
+        <br>
+        <br>
+        <!-- created a multiple checkbox -->
+        <p>What sessions are you most comfortable with?</p>
+        <!-- checkbox 1 -->
+        <label>
+            <input type="checkbox" name="checkboxGroup" value="7AM - 2PM"> 7AM - 2PM
+        </label>
+
+        <!-- Checkbox 2 -->
+        <label>
+            <input type="checkbox" name="checkboxGroup" value="8AM - 3PM"> 8AM - 3PM
+        </label>
+
+        <!-- Checkbox 3 -->
+        <label>
+            <input type="checkbox" name="checkboxGroup" value="9AM - 4PM"> 9AM - 4PM
+        </label>
+        <br>
+        <br>
+        <!-- file upload input -->
+        <label for="file_input">Upload Potrait:</label>
+        <input type="file" id="file_input" name="file_input">
+        <br> <br>
+        <!-- created a submit button -->
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
